@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    overflow: hidden; 
+}
+
+.login-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.options-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.forgot-password-link {
+    text-align: right;
+}
+
+.forgot-password-link a {
+    color: #3da1c9;
+    text-decoration: none;
+}
+
+.forgot-password-link a:hover {
+    text-decoration: underline;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.google-signin {
+    margin-top: 15px;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #061f29;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-btn:hover {
+    background-color: #103e50;
+}
+
+.signup-link, .account-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-link a, .account-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.signup-link a:hover, .account-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .image-section {
+        display: block; 
+        height: 200px;  
+    }
+
+    .login-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    .login-box {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .options-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .forgot-password-link {
+        text-align: left;
+    }
+
+    .button-group {
+        margin-top: 15px;
+    }
+
+    .google-signin {
+        margin-top: 10px;
+    }
+
+    .signup-link {
+        margin-top: 10px;
+    }
+}
